@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+}
+
+.navbar {
+    padding: 15px;
+}
+.navbar_top {
+    display: flex;
+    justify-content: space-between
+}
+
+.logo .logo_text{
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 30px;
+    color: #22202e;
+}
+
+.serch_form{
+    position: relative  ;
+}
+
+.serch_form input{
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+}
+
+.serch_form .serch_form_img{
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+
+.navbar_bottom .nav_links{
+    text-align: center;
+}
+
+.navbar_bottom .nav_links a{
+    text-decoration: none;
+    color: #726e8d;
+    font-size: 16px;
+    margin-right: 44px;
+}
+
+.nav_links a:hover{
+    color: #111;
+}
+
+.header_brend {
+    padding: 60px 80px 60px 80px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    box-sizing: border-box;
+}
+
+.header_brend_desc{
+    background: #2A254B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0 0 60px;
+    box-sizing: border-box;
+}
+
+.header_brend_img{
+    background: url(./img/Right\ Image.png);
+}
+
+.h-500{
+    height: 584px;
+}
+
+.header_brend_desc_one h1{
+    color: #fff;
+    font-size: 32px;
+    width: 50%;
+}
+
+.header_brend_desc_one button{
+    color: #fff;
+    width: 170px;
+    height: 56px;
+    font-size: 16px;
+    background: rgba(249, 249, 249, 0.15);
+    border: none;
+    cursor: pointer;
+}
+
+.header_brend_desc_two p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    width: 70%;
+}
+
+.toggle_icon{
+    margin-left: 70px;
+}
+
+
+.main_brend{
+    color: #2A254B;
+    padding: 60px 80px 60px 80px;
+}
+
+.main_brend h2{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main_brend_desc{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.header_brend_desc .block{
+    
+}
+
+.main_brend_2{
+    color: #2A254B;
+    padding: 60px 80px 60px 80px;
+}
+
+.main_brend_2_img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_brend_2_bt{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.main_brend_3{
+    color: #2A254B;
+    padding: 60px 80px 60px 80px;
+}
+
+.main_brend_3_img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_brend_3_bt{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.main_brend_4{
+    background-color: #F9F9F9;
+    padding: 60px 80px 60px 80px;  
+    color: #2A254B;
+}
+
+.main_brend_4_inner{
+    background-color: #fff;
+    padding: 60px 80px 100px 80px;
+}
+
+.main_brend_4_inner .block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_brend_4_bt{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.main_brend_4_bt input{
+    width: 250px;
+    border: none;
+    background-color: #F9F9F9;
+    color: #2A254B ;
+}
+
+.main_brend_4_bt button{
+    width: 80px;
+    height: 40px;
+    background-color: #2A254B;
+    color: #fff;
+    border: none;
+}
+
+
+@media (max-width:400px){
+    .navbar_top .navbar_links{
+        display: none;
+    }
+
+    .navbar_top{
+        flex-direction: row-reverse;
+    }
+
+    .serch_form input{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .serch_form .serch_form_img{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        margin-right: 20px;
+    }
+
+    .serch_form .toggle_icon{
+        position: absolute;
+        right: 0;
+        top: 5px;
+    }
+
+    .navbar_bottom .nav_links{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .header_brend{
+        grid-template-columns: 100%;
+        padding: 0;
+    }
+
+    .header_brend_img{
+        display: none;
+    }
+
+    .header_brend_desc_one h1{
+        width: 100%;
+    }
+
+    .header_brend_desc_two p{
+        width: 100%;
+    }
+
+    .toggle_icon{
+        display: flex;
+        margin-left: 70px;
+    }
+
+    .btn_mob{
+        color: #fff;
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+        background: rgba(249, 249, 249, 0.15);
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn_lg{
+        display: none;
+    }
+}
+
+@media (min-width:600px) and (max-width:2000px){
+    .toggle_icon{
+        display: none;
+    }
+
+    .btn_mob{
+        display: none;
+    }
+}
